@@ -23,18 +23,8 @@ namespace ProblemProject
         {
             DataAccessLayer dat = new DataAccessLayer();
 
-            dat.insertIntoProblemLog(ProblemID, LogDateTime, LogStaffID, SolutionLogComment); 
+            dat.addProblemLog(ProblemID, LogDateTime, LogStaffID, SolutionLogComment); 
         }
-
-        public int[] GetAllAssignedProblems(int num, string StaffID)
-        {
-            DataAccessLayer dat = new DataAccessLayer();
-
-            int[] ProblemID = new int[num];
-            ProblemID = dat.getAllAssignedProblems(num, StaffID);
-            return ProblemID;
-        }
-
         public DataTable GetAllAssignedProblems(string StaffID)
         {
             DataAccessLayer dat = new DataAccessLayer();

@@ -13,86 +13,71 @@ namespace ProblemProject
 
         public DataTable GetAllProblems()
         {
-            DataAccessLayer dat = new DataAccessLayer();
-            DT = dat.getAllProblems();
+            DataAccessLayer dal = new DataAccessLayer();
+            DT = dal.getAllProblems();
             return DT;
         }
 
         public DataTable GetProblemWithStatus(string status)
         {
-            DataAccessLayer dat = new DataAccessLayer();
-            DT = dat.getProblemWithStatus(status);
+            DataAccessLayer dal = new DataAccessLayer();
+            DT = dal.getProblemWithStatus(status);
             return DT;
         }
 
 
-        public void InsertIntoProblem(DateTime ProblemDateTime, int ProblemPriority, string ReportingUser, string StaffID, string MachineID, string CurrentDirectory, string ProblemComment, string ProblemCategory, string LogicalDrives, string ProblemStatus)
+        public void AddProblem(DateTime ProblemDateTime, int ProblemPriority, string ReportingUser, string StaffID, string MachineID, string CurrentDirectory, string ProblemComment, string ProblemCategory, string LogicalDrives, string ProblemStatus)
         {
-            DataAccessLayer dat = new DataAccessLayer();
-            dat.insertIntoProblem(ProblemDateTime, ProblemPriority, ReportingUser, StaffID, MachineID, CurrentDirectory, ProblemComment, ProblemCategory, LogicalDrives, ProblemStatus);
+            DataAccessLayer dal = new DataAccessLayer();
+            dal.insertIntoProblem(ProblemDateTime, ProblemPriority, ReportingUser, StaffID, MachineID, CurrentDirectory, ProblemComment, ProblemCategory, LogicalDrives, ProblemStatus);
         }
 
         public void AllocateStaff(int ProblemID, string StaffID)
         {
-            DataAccessLayer dat = new DataAccessLayer();
-            dat.allocateStaff(ProblemID, StaffID);
+            DataAccessLayer dal = new DataAccessLayer();
+            dal.allocateStaff(ProblemID, StaffID);
         }
 
-        public int[] GetAllProblemIDs(int num)
+        public DataTable SortHighPriority()
         {
-            DataAccessLayer dat = new DataAccessLayer();
-            int[] ProblemID = new int[num];
-            ProblemID = dat.getAllProblemIDs(num);
-            return ProblemID;
-        }
-
-        public DataTable FilterHighPriority()
-        {
-            DataAccessLayer dat = new DataAccessLayer();
-            DT = dat.filterHighPriority();
+            DataAccessLayer dal = new DataAccessLayer();
+            DT = dal.sortHighPriority();
             return DT;
         }
 
-        public DataTable FilterByDate(DateTime from, DateTime to)
+        public DataTable SortByDate(DateTime from, DateTime to)
         {
-            DataAccessLayer dat = new DataAccessLayer();
-            DT = dat.filterByDate(from, to);
+            DataAccessLayer dal = new DataAccessLayer();
+            DT = dal.sortByDate(from, to);
             return DT;
         }
 
-        public DataTable FilterByCategory(string category)
+        public DataTable SortByCategory(string category)
         {
-            DataAccessLayer dat = new DataAccessLayer();
-            DT = dat.filterByCategory(category);
+            DataAccessLayer dal = new DataAccessLayer();
+            DT = dal.sortByCategory(category);
             return DT;
         }
 
-        public DataTable FilterByStaffID(string staffID)
+        public DataTable SortByStaffID(string staffID)
         {
-            DataAccessLayer dat = new DataAccessLayer();
-            DT = dat.filterByStaffID(staffID);
+            DataAccessLayer dal = new DataAccessLayer();
+            DT = dal.sortByStaffID(staffID);
             return DT;
         }
 
-        public DataTable FilterByMachineID(string machineID)
+        public DataTable SortByMachineID(string machineID)
         {
-            DataAccessLayer dat = new DataAccessLayer();
-            DT = dat.filterByMachineID(machineID);
+            DataAccessLayer dal = new DataAccessLayer();
+            DT = dal.sortByMachineID(machineID);
             return DT;
         }
 
         public string GetProblemStatus(int ProblemID)
         {
-            DataAccessLayer dat = new DataAccessLayer();
-            string status;
-            status = dat.getProblemStatus(ProblemID);
+            DataAccessLayer dal = new DataAccessLayer();
+            string status = dal.getProblemStatus(ProblemID);
             return status;
-        }
-
-        public void UpdateProblem(int ProblemID, DateTime UpdateTime, int ProblemPriority, string CategoryID)
-        {
-            DataAccessLayer dat = new DataAccessLayer();
-            dat.updateProblem(ProblemID, UpdateTime, ProblemPriority, CategoryID);
         }
     }
 }
