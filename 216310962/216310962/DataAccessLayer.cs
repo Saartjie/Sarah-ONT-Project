@@ -334,7 +334,7 @@ namespace _216310962
         public string getStaffRole(string Username)
         {
             string staffRole = "";
-            dbCommand = new SqlCommand("sp_GetStaffRole", dbConnection);
+            dbCommand = new SqlCommand("sp_GetStaffrole", dbConnection);
             dbCommand.CommandType = CommandType.StoredProcedure;
             dbCommand.Parameters.AddWithValue("@Username", Username);
             dbAdapter = new SqlDataAdapter(dbCommand);
@@ -430,7 +430,7 @@ namespace _216310962
 
         public string getStaffPass(string username)
         {
-            string StaffUsername = "";
+            string StaffPass = "";
             dbCommand = new SqlCommand("sp_GetStaffPass", dbConnection);
             dbCommand.CommandType = CommandType.StoredProcedure;
             dbCommand.Parameters.AddWithValue("@Username", username);
@@ -444,10 +444,10 @@ namespace _216310962
             dr = dbCommand.ExecuteReader();
             while (dr.Read())
             {
-                StaffUsername = Convert.ToString(dr[0]);
+                StaffPass = Convert.ToString(dr[0]);
             }
             dbConnection.Close();
-            return StaffUsername;
+            return StaffPass;
         }
 
         public void addStaffMember(string Surname, string Name, string StaffRole, string Username, string Password)
