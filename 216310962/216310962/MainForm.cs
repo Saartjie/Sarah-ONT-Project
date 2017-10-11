@@ -62,5 +62,11 @@ namespace _216310962
             }
 
         }
+
+        private void btnReportProblem_Click(object sender, EventArgs e)
+        {
+            Report frmReport = new Report();
+            frmReport.ShowDialog();
+        }
     }
 }

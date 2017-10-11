@@ -104,17 +104,25 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "HW",
+            "SW",
+            "INS",
+            "Q"});
             this.comboBox2.Location = new System.Drawing.Point(67, 148);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 6;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // textBox2
             // 
+            this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(67, 297);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 7;
+            this.textBox2.Text = "Open";
             // 
             // dateTimePicker1
             // 
@@ -132,6 +140,7 @@
             this.btnReport.TabIndex = 9;
             this.btnReport.Text = "Report";
             this.btnReport.UseVisualStyleBackColor = true;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // Report
             // 

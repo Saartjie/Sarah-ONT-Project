@@ -86,6 +86,7 @@
             this.btnReportProblem.TabIndex = 5;
             this.btnReportProblem.Text = "Report Problem";
             this.btnReportProblem.UseVisualStyleBackColor = true;
+            this.btnReportProblem.Click += new System.EventHandler(this.btnReportProblem_Click);
             // 
             // MainForm
             // 
