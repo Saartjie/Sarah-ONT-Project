@@ -1,3 +1,14 @@
 C:\Users\Victor\Desktop\216310962\216310962\bin\Debug\216310962.exe.config
 C:\Users\Ashton\Documents\GitHub\LawApp\Sarah-ONT-Project\216310962\216310962\bin\Debug\216310962.exe.config
 C:\Users\Victor\Documents\GitHub\Sarah-ONT-Project\216310962\216310962\bin\Debug\216310962.exe.config
+C:\Users\Ashton\Documents\GitHub\LawApp\Sarah-ONT-Project\216310962\216310962\obj\Debug\216310962.csprojResolveAssemblyReference.cache
+C:\Users\Ashton\Documents\GitHub\LawApp\Sarah-ONT-Project\216310962\216310962\obj\Debug\_216310962.MainForm.resources
+C:\Users\Ashton\Documents\GitHub\LawApp\Sarah-ONT-Project\216310962\216310962\obj\Debug\_216310962.ProblemLabManager.resources
+C:\Users\Ashton\Documents\GitHub\LawApp\Sarah-ONT-Project\216310962\216310962\obj\Debug\_216310962.ProblemStaff.resources
+C:\Users\Ashton\Documents\GitHub\LawApp\Sarah-ONT-Project\216310962\216310962\obj\Debug\_216310962.Properties.Resources.resources
+C:\Users\Ashton\Documents\GitHub\LawApp\Sarah-ONT-Project\216310962\216310962\obj\Debug\_216310962.Report.resources
+C:\Users\Ashton\Documents\GitHub\LawApp\Sarah-ONT-Project\216310962\216310962\obj\Debug\216310962.csproj.GenerateResource.Cache
+C:\Users\Ashton\Documents\GitHub\LawApp\Sarah-ONT-Project\216310962\216310962\bin\Debug\216310962.exe
+C:\Users\Ashton\Documents\GitHub\LawApp\Sarah-ONT-Project\216310962\216310962\bin\Debug\216310962.pdb
+C:\Users\Ashton\Documents\GitHub\LawApp\Sarah-ONT-Project\216310962\216310962\obj\Debug\216310962.exe
+C:\Users\Ashton\Documents\GitHub\LawApp\Sarah-ONT-Project\216310962\216310962\obj\Debug\216310962.pdb
