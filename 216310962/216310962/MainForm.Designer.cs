@@ -38,9 +38,9 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(313, 324);
+            this.btnLogin.Location = new System.Drawing.Point(109, 94);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(71, 46);
+            this.btnLogin.Size = new System.Drawing.Size(64, 22);
             this.btnLogin.TabIndex = 0;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -48,7 +48,7 @@
             // lblUser
             // 
             this.lblUser.AutoSize = true;
-            this.lblUser.Location = new System.Drawing.Point(236, 240);
+            this.lblUser.Location = new System.Drawing.Point(34, 32);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(55, 13);
             this.lblUser.TabIndex = 1;
@@ -57,7 +57,7 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(236, 275);
+            this.lblPassword.Location = new System.Drawing.Point(34, 67);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(53, 13);
             this.lblPassword.TabIndex = 2;
@@ -65,39 +65,39 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(293, 233);
+            this.textBox1.Location = new System.Drawing.Point(91, 25);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(293, 275);
+            this.textBox2.Location = new System.Drawing.Point(91, 67);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 4;
             // 
             // btnReportProblem
             // 
-            this.btnReportProblem.Location = new System.Drawing.Point(262, 93);
+            this.btnReportProblem.Location = new System.Drawing.Point(47, 122);
             this.btnReportProblem.Name = "btnReportProblem";
             this.btnReportProblem.Size = new System.Drawing.Size(144, 23);
             this.btnReportProblem.TabIndex = 5;
             this.btnReportProblem.Text = "Report Problem";
             this.btnReportProblem.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(673, 474);
+            this.ClientSize = new System.Drawing.Size(243, 177);
             this.Controls.Add(this.btnReportProblem);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.btnLogin);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

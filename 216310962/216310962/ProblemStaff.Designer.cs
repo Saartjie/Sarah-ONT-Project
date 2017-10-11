@@ -28,11 +28,103 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnAddLog = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblStatusChange = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblLogComment = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(50, 43);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(436, 182);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // btnAddLog
+            // 
+            this.btnAddLog.Location = new System.Drawing.Point(56, 318);
+            this.btnAddLog.Name = "btnAddLog";
+            this.btnAddLog.Size = new System.Drawing.Size(75, 23);
+            this.btnAddLog.TabIndex = 1;
+            this.btnAddLog.Text = "Add Log";
+            this.btnAddLog.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Enabled = false;
+            this.dateTimePicker1.Location = new System.Drawing.Point(56, 237);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 2;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(56, 281);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 3;
+            // 
+            // lblStatusChange
+            // 
+            this.lblStatusChange.AutoSize = true;
+            this.lblStatusChange.Location = new System.Drawing.Point(53, 265);
+            this.lblStatusChange.Name = "lblStatusChange";
+            this.lblStatusChange.Size = new System.Drawing.Size(77, 13);
+            this.lblStatusChange.TabIndex = 4;
+            this.lblStatusChange.Text = "Status Change";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(258, 281);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(228, 60);
+            this.textBox1.TabIndex = 5;
+            // 
+            // lblLogComment
+            // 
+            this.lblLogComment.AutoSize = true;
+            this.lblLogComment.Location = new System.Drawing.Point(255, 265);
+            this.lblLogComment.Name = "lblLogComment";
+            this.lblLogComment.Size = new System.Drawing.Size(72, 13);
+            this.lblLogComment.TabIndex = 6;
+            this.lblLogComment.Text = "Log Comment";
+            // 
+            // ProblemStaff
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(559, 379);
+            this.Controls.Add(this.lblLogComment);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblStatusChange);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.btnAddLog);
+            this.Controls.Add(this.dataGridView1);
+            this.Name = "ProblemStaff";
             this.Text = "ProblemStaff";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnAddLog;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblStatusChange;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblLogComment;
     }
 }

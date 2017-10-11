@@ -28,11 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnAssign = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblStaffMember = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(41, 40);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(402, 201);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // btnAssign
+            // 
+            this.btnAssign.Location = new System.Drawing.Point(60, 316);
+            this.btnAssign.Name = "btnAssign";
+            this.btnAssign.Size = new System.Drawing.Size(75, 23);
+            this.btnAssign.TabIndex = 1;
+            this.btnAssign.Text = "Assign";
+            this.btnAssign.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(60, 289);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 2;
+            // 
+            // lblStaffMember
+            // 
+            this.lblStaffMember.AutoSize = true;
+            this.lblStaffMember.Location = new System.Drawing.Point(57, 263);
+            this.lblStaffMember.Name = "lblStaffMember";
+            this.lblStaffMember.Size = new System.Drawing.Size(103, 13);
+            this.lblStaffMember.TabIndex = 3;
+            this.lblStaffMember.Text = "Select Staff Member";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Enabled = false;
+            this.dateTimePicker1.Location = new System.Drawing.Point(49, 12);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 4;
+            // 
+            // ProblemLabManager
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "ProblemLabManager";
+            this.ClientSize = new System.Drawing.Size(487, 368);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.lblStaffMember);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.btnAssign);
+            this.Controls.Add(this.dataGridView1);
+            this.Name = "ProblemLabManager";
+            this.Load += new System.EventHandler(this.ProblemLabManager_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnAssign;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblStaffMember;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

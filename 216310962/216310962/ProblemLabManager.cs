@@ -16,5 +16,15 @@ namespace _216310962
         {
             InitializeComponent();
         }
+
+        private void ProblemLabManager_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
